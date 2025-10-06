@@ -6,7 +6,6 @@ langchain-huggingface
 langchain-chroma
 chromadb
 sentence-transformers
-spacy
 pyspellchecker
 Pillow
 pandas

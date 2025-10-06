@@ -4,28 +4,20 @@ spellcheck_utils.py - English-only spellchecking utility for DsD GRC AI
 from spellchecker import SpellChecker
 
 class SpellcheckUtils:
-    def spacy_phrase_match(self, text, patterns=None):
+    def phrase_match(self, text, patterns=None):
         """
-        Use spaCy PhraseMatcher to detect regulatory, legal, compliance, and colloquial phrases in text.
+        Simple phrase matcher using substring search for regulatory, legal, compliance, and colloquial phrases in text.
         patterns: list of phrases to match (official terms, colloquial phrases, etc.)
         Returns list of matched phrases.
         """
-        import spacy
-        from spacy.matcher import PhraseMatcher
-        nlp = spacy.load("en_core_web_sm")
-        matcher = PhraseMatcher(nlp.vocab, attr="LOWER")
         if patterns is None:
-            # Official regulatory/legal terms and common colloquial phrases
             patterns = [
                 "nist", "gdpr", "hipaa", "sox", "fisma", "cisa", "enisa", "iso 27001", "cybersecurity framework",
                 "risk management", "compliance", "data protection", "privacy", "incident response", "threat intelligence",
                 "what's up", "how are you", "good morning", "good afternoon", "good evening", "yo", "sup"
             ]
-        phrase_patterns = [nlp.make_doc(p) for p in patterns]
-        matcher.add("GRC_PHRASES", phrase_patterns)
-        doc = nlp(text)
-        matches = matcher(doc)
-        return [doc[start:end].text for _, start, end in matches]
+        text_lower = text.lower()
+        return [p for p in patterns if p in text_lower]
     def preprocess_input(self, text):
         """
         Preprocess user input: spellcheck, autocorrect, and phrase match for regulatory/legal/colloquial terms.
@@ -33,7 +25,7 @@ class SpellcheckUtils:
         """
         spell_result = self.check_spelling(text)
         corrected = self.autocorrect(text)
-        matched_phrases = self.spacy_phrase_match(corrected)
+        matched_phrases = self.phrase_match(corrected)
         return {
             'original': text,
             'corrected': corrected,

@@ -8,16 +8,14 @@ import shutil
 
 class GRCBrainLLM:
     def _is_greeting_or_conversational(self, query):
-        import spacy
-        nlp = spacy.load("en_core_web_sm")
-        doc = nlp(query)
-        # Check for greeting intent or conversational phrases
+        # Simple intent detection using keywords only (compatible with Python 3.13)
         greetings = ["hello", "hi", "hey", "how are you", "good morning", "good afternoon", "good evening", "what's up", "yo", "sup"]
-        for token in doc:
-            if token.text.lower() in greetings:
+        query_lower = query.lower()
+        for g in greetings:
+            if g in query_lower:
                 return True
-        # Check for intent: if query is short and contains only conversational tokens
-        if len(doc) <= 4 and any(token.pos_ in ["INTJ", "PRON", "ADV"] for token in doc):
+        # If query is short and contains only conversational words
+        if len(query.split()) <= 4:
             return True
         return False
     def __init__(self, host="http://localhost:11434", model="llama3:8b"):

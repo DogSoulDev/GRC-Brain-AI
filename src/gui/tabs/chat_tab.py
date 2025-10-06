@@ -259,14 +259,15 @@ class ChatTab(ctk.CTkFrame):
         # Display answer
         self.chat_display.insert("end", f"Brain: {response}\n", "ai")
         self.chat_display._textbox.see("end")
-        # If sources found, show clickable file buttons below response
+        # Only show 'Sources:' and file buttons if there are actual sources (uploaded files/links)
         if sources:
-            self.chat_display.insert("end", "Sources:\n", "ai")
+            shown = False
             for src in sources:
-                # Find uploaded file info by path
                 file_info = next((f for f in self.uploaded_files if f["path"] == src), None)
                 if file_info:
-                    # Insert a clickable button for each file
+                    if not shown:
+                        self.chat_display.insert("end", "Sources:\n", "ai")
+                        shown = True
                     def open_file(path=src):
                         import os, platform
                         if platform.system() == "Windows":
@@ -275,13 +276,11 @@ class ChatTab(ctk.CTkFrame):
                             os.system(f"open '{path}'")
                         else:
                             os.system(f"xdg-open '{path}'")
-                    # Use a tag for clickable text (simulate button)
                     start_idx = self.chat_display.index("end-2c")
                     self.chat_display.insert("end", f"📄 {file_info['filename']}\n", "ai")
                     self.chat_display._textbox.tag_add(f"file_{file_info['filename']}", start_idx, f"{start_idx} lineend")
                     self.chat_display._textbox.tag_bind(f"file_{file_info['filename']}", "<Button-1>", lambda e, p=src: open_file(p))
-        # If no sources, do not show 'Sources:' or anything extra
-        # Hide 'Sources:' if no sources
+        # If no sources, do not show anything extra
         # Info bar feedback for response
         self.info_bar.configure(text="✅ Response received.")
         import threading
