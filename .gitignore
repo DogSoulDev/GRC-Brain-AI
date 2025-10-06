@@ -3,6 +3,41 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Datasets
+*.parquet
+*.arrow
+
+# LLM/ChromaDB
+chromadb/
+
+# Jupyter
+*.ipynb
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
+llm_query_log.json
+feedback_log.json
+
+# Images
+src/img/*.png
+src/img/*.jpg
+src/img/*.svg
+
+# Docs
+*.pdf
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 .env
 chromadb/
 *.sqlite3

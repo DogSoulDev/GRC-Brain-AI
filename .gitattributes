@@ -1,0 +1,8 @@
+*.py text eol=lf
+*.md text eol=lf
+*.svg text eol=lf
+*.jpg text eol=lf
+*.png text eol=lf
+*.json text eol=lf
+*.parquet text eol=lf
+*.arrow filter=lfs diff=lfs merge=lfs -text

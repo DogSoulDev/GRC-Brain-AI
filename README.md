@@ -8,9 +8,14 @@ DsD GRC AI is a desktop application for secure, local management and querying of
 ![Intro Animation](src/img/Intro.png)
 ![AI Main View](src/img/Base.png)
 
-## Quick Installation
-1. Install Python 3.11 or higher.
-2. Install Ollama:
+## Quick Start
+1. Clone the repository:
+   ```
+   git clone https://github.com/DogSoulDev/GRC-Brain-AI.git
+   cd GRC-Brain-AI
+   ```
+2. Install Python 3.11 or higher.
+3. Install Ollama:
    - Download from: https://ollama.com/download
    - Run the installer and restart your PC.
    - Add `C:\Users\dogso\AppData\Local\Programs\Ollama` to your Windows PATH if `ollama` is not recognized.
@@ -21,11 +26,21 @@ DsD GRC AI is a desktop application for secure, local management and querying of
      ollama list
      ```
    - Verify that the model `llama3:8b` appears in the list.
-3. Install dependencies:
+4. Install dependencies:
    ```
    pip install -r requirements.txt
    ```
-4. Run the application:
+5. (Optional) Install Git LFS for large files:
+   ```
+   git lfs install
+   git lfs track "*.arrow"
+   git lfs track "*.parquet"
+   git add .gitattributes
+   git add .
+   git commit -m "Track large files with LFS"
+   git push
+   ```
+6. Run the application:
    ```
    python main.py
    ```
