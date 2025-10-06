@@ -1,3 +1,7 @@
+# GRC Brain AI
+
+![Intro Animation](src/img/Intro.png)
+![AI Main View](src/img/Base.png)
 
 
 
