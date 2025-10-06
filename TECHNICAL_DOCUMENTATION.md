@@ -1,35 +1,26 @@
 
 
-# DsD GRC AI - Technical Documentation
 
-![Intro Animation](src/img/Intro.png)
-![AI Main View](src/img/Base.png)
+# GRC Brain AI - Technical Documentation
 
 ## Overview
-DsD GRC AI is a local desktop assistant for compliance, risk, legal, and cybersecurity queries. It uses local LLMs (Ollama, Llama 3), RAG (ChromaDB), and a modern CustomTkinter GUI inspired by Copilot in VS Code.
+GRC Brain AI is a local desktop assistant for compliance, risk, legal, and cybersecurity queries. It uses local LLMs (Ollama, Llama 3), RAG (ChromaDB), and a modern CustomTkinter GUI inspired by Copilot in VS Code.
 
 ## AI Models and Engines
 ### Ollama (Llama 3)
 - Runs advanced LLMs locally, no cloud required
 - Full privacy and easy integration with Python/LangChain
 - Download: https://ollama.com/download
-- Docs: https://ollama.com/docs
-- Python Library: https://github.com/ollama/ollama-python
 
 ### ChromaDB and LangChain RAG
 - Enables the AI to learn from legal and regulatory documents
 - ChromaDB stores texts and converts them to embeddings for contextual search
-- Uses `sentence-transformers/all-MiniLM-L6-v2` (lightweight, fast, effective)
-- ChromaDB: https://docs.trychroma.com/
-- LangChain: https://python.langchain.com/docs/
+- Uses `sentence-transformers/multi-qa-mpnet-base-cos-v1` for embeddings
 
 ## Architecture
-- Modular, hexagonal, clean architecture
+- Modular, hexagonal, clean codebase
 - SOLID, DRY, and KISS principles
-- CustomTkinter GUI (Copilot VS Code style, professional dark)
-- Pagination and result selector for large datasets
-- Visual warnings for large queries and documents
-- Easy document upload and knowledge expansion
+- CustomTkinter GUI (Copilot VS Code style)
 
 ## Requirements
 - Python 3.11+
@@ -45,7 +36,7 @@ DsD GRC AI is a local desktop assistant for compliance, risk, legal, and cyberse
 4. Run: `python main.py`
 
 ## Knowledge Base Expansion
-- Add TXT, PDF, DOCX, XLSX, CSV, HTML, Markdown, or JSON files to `official_docs/` or use the "Add File" button in the interface
+- Add TXT, PDF, DOCX, XLSX, CSV, HTML, Markdown, or JSON files using the "Add Document" button or place in `official_docs/`
 - Consult and download links in `official_docs/official_links.txt`
 
 ## Expert Usage

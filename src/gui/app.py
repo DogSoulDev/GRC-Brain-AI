@@ -7,7 +7,7 @@ from src.gui.tabs.chat_tab import ChatTab
 class GRCBrainApp(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.title("Brain")
+        self.title("GRC Brain AI")
         self.geometry("900x600")
         self.configure(bg="#181818")
         self.loader_frame = None
@@ -67,7 +67,7 @@ class GRCBrainApp(ctk.CTk):
             word, color = rotating_words[self._rotating_word_idx]
             self._main_text_id = self.anim_canvas.create_text(
                 main_x, main_text_y,
-                text='GRC Brain is ',
+                text='GRC Brain AI is ',
                 font=main_font,
                 fill='white',
                 anchor='w'
@@ -100,13 +100,13 @@ class GRCBrainApp(ctk.CTk):
         # Animated birds overlay (3.svg above text, centered horizontally, moving left to right)
         self._bird_ids = []
         if hasattr(self, 'bird_photos') and self.bird_photos:
-            # Only 2 birds, positioned higher above the text, moving left/right
-            birds_y = win_h // 2 - 160  # Higher above the text
-            birds_x_positions = [win_w // 2 - 180, win_w // 2 + 180]
-            self._bird_positions = birds_x_positions
-            self._bird_y_positions = [birds_y, birds_y]
-            self._bird_speeds = [2, -2]
-            self._bird_y_speeds = [0, 0]
+            # Place birds in distinct vertical zones so they never cross
+            birds_y_positions = [win_h // 2 - 180, win_h // 2 - 80, win_h // 2 + 40]
+            birds_x_positions = [win_w // 2 - 220, win_w // 2 + 120, win_w // 2 - 60]
+            self._bird_positions = birds_x_positions[:len(self.bird_photos)]
+            self._bird_y_positions = birds_y_positions[:len(self.bird_photos)]
+            self._bird_speeds = [2, -2, 2][:len(self.bird_photos)]
+            self._bird_y_speeds = [0, 0, 0][:len(self.bird_photos)]
             self._bird_ids = []
             for i in range(len(self._bird_positions)):
                 bird_id = self.anim_canvas.create_image(self._bird_positions[i], self._bird_y_positions[i], anchor='nw', image=self.bird_photos[i % len(self.bird_photos)])
@@ -126,9 +126,9 @@ class GRCBrainApp(ctk.CTk):
                         x = win_w
                     # Wrap vertically
                     if y > win_h - 80:
-                        y = birds_y
+                        y = self._bird_y_positions[i]
                     if y < 0:
-                        y = birds_y
+                        y = self._bird_y_positions[i]
                     # Check for overlap with other birds
                     for j in range(len(self._bird_ids)):
                         if i != j:
