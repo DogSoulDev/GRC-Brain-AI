@@ -1,0 +1,14 @@
+ENISA - European Union Agency for Cybersecurity
+Country: EU
+Official source: https://www.enisa.europa.eu/publications
+
+[Summary]
+ENISA publishes guides, reports, and best practices on cybersecurity in Europe. It is a reference for regulations, risk management, and infrastructure protection.
+
+[Key resources]
+- Technical reports
+- Best practices
+- Compliance guides
+
+[Publications link]
+https://www.enisa.europa.eu/publications

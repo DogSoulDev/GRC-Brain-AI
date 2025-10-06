@@ -1,0 +1,18 @@
+General Data Protection Regulation (GDPR)
+Country: EU
+Official source: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679
+
+[Summary]
+The GDPR regulates the protection of personal data in the European Union. Key principles: lawfulness, fairness, transparency, purpose limitation, data minimization, accuracy, storage limitation, integrity and confidentiality, accountability.
+
+[Main articles]
+- Article 5: Principles relating to processing of personal data
+- Article 6: Lawfulness of processing
+- Article 7: Conditions for consent
+- Article 32: Security of processing
+- Article 33: Notification of personal data breaches
+- Article 35: Data protection impact assessment
+- Article 83: Penalties
+
+[Full PDF link]
+https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679

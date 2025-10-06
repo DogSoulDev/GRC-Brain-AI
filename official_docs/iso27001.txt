@@ -1,0 +1,15 @@
+ISO/IEC 27001:2022 - Information Security Management Systems
+Country: International
+Official source: https://www.iso.org/isoiec-27001-information-security.html
+
+[Summary]
+ISO/IEC 27001 is the international standard for information security management. It defines requirements for establishing, implementing, maintaining, and continually improving an ISMS.
+
+[Key principles]
+- Confidentiality, integrity, and availability (CIA triad)
+- Risk assessment and treatment
+- Security controls
+- Continuous improvement
+
+[Guide link]
+https://www.iso.org/isoiec-27001-information-security.html

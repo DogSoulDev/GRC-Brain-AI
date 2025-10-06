@@ -1,0 +1,15 @@
+National Security Framework (ENS) - Spain
+Country: Spain
+Official source: https://www.boe.es/buscar/act.php?id=BOE-A-2010-13317
+
+[Summary]
+The ENS establishes the principles and minimum requirements for information protection in the Spanish public sector.
+
+[Key principles]
+- Information protection
+- Risk management
+- Security categories
+- Security measures
+
+[Official link]
+https://www.boe.es/buscar/act.php?id=BOE-A-2010-13317

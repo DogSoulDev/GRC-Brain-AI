@@ -1,0 +1,65 @@
+# Official GRC, cybersecurity, legal, risk, compliance resources
+
+## Spain
+- National Security Framework (ENS): https://www.boe.es/buscar/act.php?id=BOE-A-2022-14625
+- Data Protection Law: https://www.aepd.es/es/leyes
+- INCIBE: https://www.incibe.es/
+- CCN-CERT: https://www.ccn-cert.cni.es/
+- Spanish Data Protection Agency: https://www.aepd.es/
+- LSSI: https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758
+- General Telecommunications Law: https://www.boe.es/buscar/act.php?id=BOE-A-2014-4950
+
+## EU
+- ENISA: https://www.enisa.europa.eu/
+- GDPR: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679
+- NIS2 Directive: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022L2555
+- eIDAS: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32014R0910
+
+## USA
+- NIST Cybersecurity Framework: https://www.nist.gov/cyberframework
+- NIST SP 800-53: https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final
+- CISA: https://www.cisa.gov/
+- HIPAA: https://www.hhs.gov/hipaa/index.html
+- SOX: https://www.soxlaw.com/
+- FISMA: https://www.dhs.gov/fisma
+- GLBA: https://www.ftc.gov/business-guidance/privacy-security/gramm-leach-bliley-act
+- PCI DSS: https://www.pcisecuritystandards.org/
+- FERPA: https://www2.ed.gov/policy/gen/guid/fpco/ferpa/index.html
+ - NIST SP 800 Series: https://csrc.nist.gov/publications/sp800
+ - SEC Cybersecurity Rules: https://www.sec.gov/rules/final/2023/33-11216.pdf
+ - CCPA/CPRA: https://cppa.ca.gov/regulations/
+ - VCDPA: https://law.lis.virginia.gov/vacode/title59.1/chapter53/
+ - CPA: https://coag.gov/resources/colorado-privacy-act/
+ - NCSL Breach Notification Laws: https://www.ncsl.org/privacy-and-security/security-breach-notification-laws
+ - NERC CIP: https://www.nerc.com/Pages/default.aspx
+ - PHMSA: https://www.phmsa.dot.gov/
+ - Congress.gov: https://www.congress.gov/
+ - U.S. Code: https://uscode.house.gov/
+
+## International
+- ISO/IEC 27001: https://www.iso.org/isoiec-27001-information-security.html
+- ISO/IEC 27002: https://www.iso.org/standard/54533.html
+- ISO/IEC 27701: https://www.iso.org/standard/71670.html
+- ISACA COBIT: https://www.isaca.org/resources/cobit
+- OWASP: https://owasp.org/
+- ITIL: https://www.axelos.com/best-practice-solutions/itil
+- CIS Controls: https://www.cisecurity.org/controls
+- MITRE ATT&CK: https://attack.mitre.org/
+- SANS Top 20: https://www.sans.org/top-cyber-security-risks/
+- Cloud Security Alliance (CSA): https://cloudsecurityalliance.org/
+- ISO/IEC 22301 (Business Continuity): https://www.iso.org/iso-22301-business-continuity.html
+
+## Latin America
+- Argentina Data Protection Law: https://www.argentina.gob.ar/aaip/ley-de-proteccion-de-datos-personales
+- Brazil Habeas Data Law: https://www.gov.br/cidadania/pt-br/acesso-a-informacao/lgpd
+- Mexico Data Protection Law: https://www.ifai.org.mx/
+
+## Other resources and guides
+- NIST Cybersecurity Resource Center: https://csrc.nist.gov/
+- European Data Protection Board: https://edpb.europa.eu/
+- ISF Standard of Good Practice: https://www.securityforum.org/tool/standard-of-good-practice/
+- ITU Cybersecurity: https://www.itu.int/en/ITU-D/Cybersecurity/Pages/default.aspx
+- Cybersecurity Guide (USA): https://www.cisa.gov/resources-tools/resources/cybersecurity-guide
+- Cybersecurity for Beginners: https://www.cybersecurityguide.org/
+
+# All links are official sources recommended for legal and technical reference in cybersecurity, risk, and compliance. Add more resources to this file to improve the knowledge base.

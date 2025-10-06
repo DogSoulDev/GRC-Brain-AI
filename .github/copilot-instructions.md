@@ -1,0 +1,9 @@
+- [x] Verificar que el copilot-instructions.md file en .github existe.
+- [x] Clarificar requisitos del proyecto
+- [x] Scaffold del proyecto
+- [x] Personalizar el proyecto
+- [x] Instalar extensiones necesarias
+- [x] Compilar el proyecto
+- [x] Crear y ejecutar tarea
+- [x] Lanzar el proyecto
+- [x] Verificar documentación completa

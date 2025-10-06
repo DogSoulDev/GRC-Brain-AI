@@ -1,0 +1,16 @@
+NIST Cybersecurity Framework (CSF) 2.0
+Country: USA
+Official source: https://www.nist.gov/cyberframework
+
+[Summary]
+The NIST CSF provides a framework for managing and reducing cybersecurity risk in public and private organizations. It is based on five core functions: Identify, Protect, Detect, Respond, and Recover.
+
+[Functions]
+- Identify
+- Protect
+- Detect
+- Respond
+- Recover
+
+[Guide link]
+https://www.nist.gov/cyberframework

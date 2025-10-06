@@ -1,0 +1,43 @@
+# GRC USA: Federal, Sectorial, Estatal
+
+## 1. Nivel Federal (Marcos y Leyes Generales)
+
+### Marcos de Referencia y Estándares Voluntarios (El "Cómo")
+- NIST Cybersecurity Framework (CSF): https://www.nist.gov/cyberframework
+- NIST SP 800 Series: https://csrc.nist.gov/publications/sp800
+- CISA: https://www.cisa.gov/
+
+### Leyes Federales (El "Qué")
+- Congress.gov: https://www.congress.gov/
+- U.S. Code: https://uscode.house.gov/
+- FISMA: https://www.dhs.gov/fisma
+- SOX (Sarbanes-Oxley): https://pcaobus.org/oversight/rules
+
+## 2. Nivel Sectorial (Regulaciones Obligatorias)
+
+### Salud (Healthcare)
+- HIPAA Security Rule: https://www.hhs.gov/hipaa/for-professionals/security/index.html
+
+### Financiero
+- GLBA: https://www.ftc.gov/business-guidance/privacy-security/gramm-leach-bliley-act
+- PCI DSS: https://www.pcisecuritystandards.org/
+
+### Regulación de Valores
+- SEC: https://www.sec.gov/
+
+## 3. Nivel Estatal (Privacidad y Notificación de Incidentes)
+
+### Privacidad de Datos
+- CCPA/CPRA (California): https://cppa.ca.gov/regulations/
+- VCDPA (Virginia): https://law.lis.virginia.gov/vacode/title59.1/chapter53/
+- CPA (Colorado): https://coag.gov/resources/colorado-privacy-act/
+
+### Notificación de Violaciones de Datos
+- NCSL: https://www.ncsl.org/privacy-and-security/security-breach-notification-laws
+
+## Estrategia RAG
+- Priorizar PDFs y HTML estructurado de marcos y leyes.
+- Etiquetar chunks con metadatos: Fuente, Categoría GRC, Sector.
+- Prompting contextual para IA (Llama 3/Ollama).
+
+# Este documento resume la estructura legal y técnica de ciberseguridad y privacidad en EE. UU. para uso en RAG y GRC Brain.
