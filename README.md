@@ -73,4 +73,7 @@ DsD GRC AI is a desktop application for secure, local management and querying of
 All legal, regulatory, and technical information is preloaded from official sources. See `official_docs/` and `official_docs/official_links.txt` for documents and links. All resources are in English and indicate the country of reference.
 
 ## License
-This software is Open Source, but commercial use or sale is prohibited. Attribution to DogSoulDev and https://dogsouldev.github.io/Web/ is required.
+
+This software is open source, but commercial use or sale is prohibited. Attribution to DogSoulDev and https://dogsouldev.github.io/Web/ is required.
+
+Crafted in Galicia... 🌳
